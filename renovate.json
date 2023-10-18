@@ -1,0 +1,16 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:best-practices"
+    ],
+    "labels": [
+        "auto-detected-category::{{#if category}}{{category}}{{else}}unspecified{{/if}}"
+    ],
+    "packageRules": [
+        {
+            "description": "Show that the category is detected by renovate",
+            "matchCategories": [ "python" ],
+            "addLabels": [ "manually-specified-category::python"]
+        }
+    ]
+}
