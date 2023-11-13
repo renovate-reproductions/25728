@@ -4,7 +4,7 @@
         "config:best-practices"
     ],
     "labels": [
-        "auto-detected-category::{{#if category}}{{category}}{{else}}unspecified{{/if}}"
+        "auto-detected-category::{{#if categories}}{{categories}}{{else}}unspecified{{/if}}"
     ],
     "packageRules": [
         {
